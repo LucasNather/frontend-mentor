@@ -1,0 +1,248 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    width: 100%;
+    margin: 0 auto;
+}
+
+section{
+    padding: 2em;
+}
+
+
+section.topo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.topo ul{
+    display: flex;
+}
+
+.topo ul li{
+    padding: .5em;
+}
+
+.topo ul li:nth-child(2) a{
+    margin: 0 20px;
+}
+
+.topo a,h2,p{
+    color: rgb(3, 3, 50);
+}
+
+/*FIM DO HEADER*/
+
+.container-principal{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.content{
+    width: 50%;
+    padding: 15px;
+}
+
+.image{
+    width: 50%;
+}
+
+.image img{
+    width: 100%;
+}
+
+h2{
+    font-size: 2.5em;
+}
+
+.container-principal p{
+    line-height: 20px;
+    margin: 20px 0;
+}
+
+.get-started input{
+    width: 70%;
+    padding: .6em;
+    border-radius: 3px;
+}
+
+.get-started button, .container-early .form button{
+    width: 25%;
+    padding: .8em;
+    background-color: rgb(24, 65, 232);
+    border: none;
+    color: #fff;
+    font-weight: 300;
+    border-radius: 3px;
+}
+
+/*FIM DA PRIMEIRA SECAO PRINCIPAL*/
+
+.productive{
+    margin: 50px 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: rgb(244, 248, 247);
+    background-repeat: no-repeat;
+    margin: 0;
+}
+
+.productive-content{
+    width: 50%;
+    padding: 1em;
+}
+
+.image-productive{
+    width: 50%;
+}
+
+.image-productive img{
+    width: 100%;
+}
+
+.productive-content p{
+    margin: 10px 0;
+}
+
+.fylo-works{
+    display: flex;
+    align-items: center;
+}
+
+.fylo-works a{
+    color: rgb(8, 153, 105);
+    text-decoration: underline;
+}
+
+.card{
+    background-color: #fff;
+    width: 40%;
+    padding: 1em;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+
+.founder{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.founder span{
+    color: rgb(179, 174, 174);
+    font-size: .6em;
+}
+
+.founder p{
+    margin: 0;
+}
+
+.founder img{
+    border-radius: 50%;
+    width: 10%;
+}
+
+.founder h3{
+    font-size: .8em;
+}
+
+/*FIM SA SEGUNDA SECAO PRINCIPAL*/
+
+.container-early{
+    background-color: rgb(36, 7, 132);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+}
+
+.content-early{
+    width: 40%;
+}
+
+.container-early .form{
+    width: 40%;
+}
+
+.container-early .form input{
+    display: block;
+    width: 100%;
+    padding: .6em;
+}
+
+.container-early .form button{
+    padding: .6em;
+    margin: 5px 0;
+}
+
+.container-early h2,.container-early p,.container-early button{
+    color: #fff;
+}
+
+/*FIM TERCEIRA SECAO PRINCIPAL*/
+
+footer{
+    background-color: rgb(3, 3, 48);
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer p, .footer li {
+    color: #fff;
+}
+
+.contatos{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/*FIM DO FOOTER*/
+
+@media  screen and (max-width:800px) {
+    .container-principal{
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+    }
+    .content, .image{
+        width: 80%;
+    }
+    .productive{
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+    }
+    .productive-content, .image-productive, .card{
+        width: 80%;
+    }
+    .content-early, .container-early .form{
+        width: 100%;
+        margin: 10px 0;
+    }
+    .container-early{
+        flex-wrap: wrap;
+    }
+    .footer{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .footer div{
+        margin: 10px 0;
+    }
+}
+
